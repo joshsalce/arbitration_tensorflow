@@ -1,1 +1,1 @@
-# Predicting MLB Arbitration with Keras Sequential Network in Tensorflow
+# Predicting MLB Arbitration Salaries with Keras Sequential Network
