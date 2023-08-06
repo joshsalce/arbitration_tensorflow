@@ -1,3 +1,6 @@
+import requests
+from bs4 import BeautifulSoup
+
 '''
 Goal: Scrape all necessary MLBTradeRumors links to return arbitration data
       into a dataframe (data not readily/easily available)
