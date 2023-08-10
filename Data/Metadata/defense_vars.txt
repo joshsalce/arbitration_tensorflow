@@ -1,8 +1,25 @@
-DATA-SPECIFIC INFORMATION FOR: [FILENAME]
-<repeat this section for each dataset, folder or file, as appropriate>
+DATA-SPECIFIC INFORMATION FOR: FieldingData.csv
 
-Number of variables: 
+Source: https://www.fangraphs.com/leaders.aspx?pos=all&stats=fld&lg=all&qual=0&type=c,6,7,8,9,28,39,61,59,17,18&season=2022&month=0&season1=2010&ind=1&team=0&rost=0&age=0&filter=&players=0&startdate=&enddate=
 
-Number of cases/rows: 
+Number of variables: 16
 
-Variable List: <list variable name(s), description(s), unit(s) and value labels as appropriate for each>
+Number of cases/rows: 27286
+
+Variable List
+  Season: Season of player's statistics
+  Name: Name of player, formatted 'first + last'
+  Team: Team abbreviation of player, "---" indicates multiple teams played for	
+  Pos: Primary position of player during season
+  Inn: Innings player has played on defense for a given year
+  PO: # of put-outs by player, player catches/throws out runner	
+  A: assists, number of times player on defense contributes to out(s)
+  E: errors committed by player
+  DRS: Statistic attempting to calculate # runs saved by defender
+  UZR: Statistic attempting to calculate zone defensive ratings by defender
+  RAA: Expected runs allowed by defender
+  FRM: Statistic measuring runs saved by catcher framing to manipulate called strikes
+  SB: # stolen bases by player (exclusively pitchers/catchers)	
+  CS: # runners thrown out by player (exclusively catchers)
+  playerid: Fangraphs ID of pitcher
+  mlbamid: MLB ID of pitcher
