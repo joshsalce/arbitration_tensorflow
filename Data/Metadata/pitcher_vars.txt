@@ -1,8 +1,90 @@
-DATA-SPECIFIC INFORMATION FOR: [FILENAME]
-<repeat this section for each dataset, folder or file, as appropriate>
+DATA-SPECIFIC INFORMATION FOR: PitchingData.csv
 
-Number of variables: 
+Source: https://www.fangraphs.com/leaders.aspx?pos=all&stats=pit&lg=all&qual=0&type=c,3,4,5,7,8,9,10,114,11,12,13,55,57,14,15,16,17,18,19,20,21,22,23,28,24,25,26,27,43,41,42,6,332,117,45,62,118,119,59,63,64,65,123,218,219,220,221,222,223,225,330,113,217,331,36,37,39,40,66,122,51,44,46,47,48,49,50,52,53,105,106,107,108,109,110,111&season=2022&month=0&season1=2010&ind=1&team=0&rost=0&age=0&filter=&players=0&startdate=&enddate=
 
-Number of cases/rows: 
+Number of variables: 81
 
-Variable List: <list variable name(s), description(s), unit(s) and value labels as appropriate for each>
+Number of cases/rows: 9707
+
+Variable List
+  Season: Season of pitcher's statistics
+  Name: Name of player, formatted 'first + last'
+  Team: Team abbreviation of player, "---" indicates multiple teams played for
+  Age: Age of player during year
+  W: # of wins for pitcher 
+  L: # of losses for pitcher 
+  G: # of games played in by pitcher
+  GS: # of games started by pitcher
+  CG: # of complete games for pitcher, recording first and last out of game
+  ShO: # of shutouts for pitcher, holding
+  HLD: # of holds for relief pitchers, entering and leaving game with team leading in runs scored
+  SV: # of saves for relief pitchers, gained by recording last out(s) of game when team leads by 3 or less runs OR by recording last 9+ outs
+  BS: # of blown saves for relief pitchers, gained by allowing runs that result in tie or lead change when team was ahead in runs
+  IP: Innings pitched, 3 outs constitute one inning pitched
+  Start-IP: Innings pitched by pitcher when starting a game
+  Relief-IP: Innings pitched by pitcher when entering a game as reliever
+  TBF: Total batters faced during a season
+  H:  # of hits allowed by pitcher
+  R: # of runs allowed by pitcher
+  ER: # of earned runs allowed by pitcher, where runs do not score from errors
+  HR: # of home runs allowed by pitcher
+  BB: # of walks allowed
+  IBB: # of intentional walks allowed
+  HBP: # of batters hit by pitcher	
+  WP: # of "wild pitches" that allow runners on base to advance
+  BK: # of "balks" for pitcher, issued at discretion of umpires
+  IFFB: # of Infield Fly Balls, where hitter pops out to infielder with less than 2 outs, called at umpire's discretion
+  SO: # of batters struck out by pitchers
+  GB: # of groundballs induced by pitcher
+  FB: # of flyballs induced by pitcher	
+  LD: # of line-drives induced by pitcher
+  BABIP: Batting Average on balls in play allowed by pitcher
+  AVG: Batting Average (H/AB) allowed by pitcher
+  WHIP: (Walks allowed + Hits allowed) / IP 
+  ERA: (Earned Runs allowed by pitcher / IP) * 9
+  xERA: Calculated Expected ERA
+  ERA-: ERA for pitchers normalized for park factors and league wide run environment
+  FIP: ERA estimator, ((13*HR allowed)+(3*(BB allowed + HBP allowed))-(2*SO))/ IP + FIP_constant
+  xFIP: Expected FIP normalizing HR allowed to league-average HR/FB
+  FIP-: FIP for pitchers normalized for park factors and league wide run environment
+  xFIP-: xFIP for pitchers normalized for park factors and league wide run environment
+  WAR: Wins Above Replacement, or statistic measuring overall contribution to team wins based on expected runs prevented or scored
+  WPA: Sum of expected wins contributed by a pitcher 
+  pos_WPA: Sum of positive expected wins contributed by a pitcher 
+  neg_WPA:: Sum of negative expected wins contributed by a pitcher 	
+  RS/9: Total R allowed / 9
+  Pull%: Percentage of balls in play "pulled" according to handedness of batter
+  Cent%: Percentage of balls in play hit "up the middle"
+  Oppo%: Percentage of balls in play hit "opposite way" according to handedness of batter
+  Soft%: Percentage of balls in play judged to be hit "softly"
+  Med%: Percentage of balls in play judged to be hit "medium hard"
+  Hard%: Percentage of balls in play judged to be hit "hard"
+  TTO%: Three True Outcome %, (SO + BB + HR) / Plate Appearances
+  CStr%: % called strikes thrown by pitcher
+  SwStr%: % swinging strikes thrown by pitcher	
+  K-BB%: percentage of SO - percentage of BB
+  CSW%: (Called strikes + Swinging Strikes) / Total Pitches thrown
+  K/9: (SO/IP) * 9
+  BB/9: (BB/IP) * 9
+  H/9: (H/IP) * 9
+  HR/9: (HR/IP) * 9	
+  RE24: Total Run Expectancy Calculated for pitcher
+  SIERA: ERA estimator based on walks, strikeouts, balls in play and quality of hits against pitcher
+  HR/FB: HR allowed / FB allowed	
+  LOB%: Percentage of total runners left on base, fail to score
+  GB/FB: Ratio of groundballs to flyballs
+  LD%: Percentage of balls in play that are line-drives
+  GB%: Percentage of balls in play that are groundballs
+  FB%: Percentage of balls in play that are flyballs
+  IFFB%: Percentage of balls in play that are infield flyballs	
+  IFH%: # of balls in play that are infield hits
+  BUH%: # of balls in play that are bunt hits
+  O-Swing%: Percentage of swings against pitcher on pitches outside of zone / pitches thrown outside zone 
+  Z-Swing%: Percentage of swings against pitcher on pitches in strike zone / pitches thrown in strike zone 
+  Swing%: Percentage of swings against pitcher / total pitches thrown
+  O-Contact%: Percentage of contact against pitcher on pitches outside of zone / pitches thrown outside zone 
+  Z-Contact%: Percentage of contact against pitcher on pitches in strike zone / pitches thrown in strike zone 
+  Contact%: Percentage of contact against pitcher / total pitches thrown	
+  Zone%: Percentage of pitches thrown by pitcher in strike zone / total pitches thrown
+  playerid: Fangraphs ID of pitcher
+  mlbamid: MLB ID of pitcher
