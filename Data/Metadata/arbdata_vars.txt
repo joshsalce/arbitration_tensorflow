@@ -1,8 +1,56 @@
-DATA-SPECIFIC INFORMATION FOR: [FILENAME]
-<repeat this section for each dataset, folder or file, as appropriate>
-
-Number of variables: 
+DATA-SPECIFIC INFORMATION FOR: [arb2011.csv, arb2012.csv, arb2013.csv, arb2014.csv, arb2015.csv, arb2016.csv, arb2017.csv]
+Sources
+  - arb2011.csv: https://transactions.mlbtraderumors.com/widget/arbitration-submissions/2010/
+  - arb2012.csv: https://transactions.mlbtraderumors.com/widget/arbitration-submissions/2011/
+  - arb2013.csv: https://transactions.mlbtraderumors.com/widget/arbitration-submissions/2012/
+  - arb2014.csv: https://transactions.mlbtraderumors.com/widget/arbitration-submissions/2013/
+  - arb2015.csv: https://transactions.mlbtraderumors.com/widget/arbitration-submissions/2014/
+  - arb2016.csv: https://transactions.mlbtraderumors.com/widget/arbitration-submissions/2015/
+  - arb2017.csv: https://transactions.mlbtraderumors.com/widget/arbitration-submissions/2016/
 
 Number of cases/rows: 
+  - arb2011.csv: 162
+  - arb2012.csv: 174
+  - arb2013.csv: 159
+  - arb2014.csv: 178
+  - arb2015.csv: 195
+  - arb2016.csv: 162
+  - arb2017.csv: 189
+
+Number of variables: 7
 
 Variable List: <list variable name(s), description(s), unit(s) and value labels as appropriate for each>
+  - Player:	Name of player in arbitration case, formatted "first last"
+  - Team:	Team abbreviation of player's team in arbitration case
+  - Service: Service Time, a.k.a. time spent in major leagues of player at time of arbitration case, formatted "years.days"
+  - Player Amt.: Proposed salary of player, formatted "$x.xxxMM" (NA except in cases of hearings)
+  - Team Amt.:	Proposed salary of team, formatted "$x.xxxMM" (NA except in cases of hearings)
+  - Midpoint:	Midpoint of proposed salary of player and team, formatted "$x.xxxMM" (NA except in cases of hearings)
+  - Settled Amt.: Resulting salary of player, values "$x.xxxMM" or "Extension"
+
+--------------------------------------------------------------------------------------------------------------------------
+DATA-SPECIFIC INFORMATION FOR: [arb2018.csv, arb2019.csv, arb2020.csv, arb2021.csv, arb2022.csv, arb2023.csv]
+Source: Cot's Baseball Contracts, https://docs.google.com/spreadsheets/d/1qxfZP9F05K7mIO4Kwv5D6hEbvtmAutIc807GSfoCQ1A/edit
+
+Number of cases/rows: 
+  - arb2018.csv: 212
+  - arb2019.csv: 263
+  - arb2020.csv: 256
+  - arb2021.csv: 246
+  - arb2022.csv: 308
+  - arb2023.csv: 309
+
+Number of variables: 11
+
+Variable List: <list variable name(s), description(s), unit(s) and value labels as appropriate for each>
+  - Player: Name of player in arbitration case, formatted "last, first"	
+  - Season: Previous season at time of arbitration case
+  - Club: Team of player in arbitration case
+  - Pos'n: Position abbreviation of player (C, 1B, SP, etc.), can be hyphenated to include multiple
+  - MLS: Service Time, a.k.a. time spent in major leagues of player at time of arbitration case, formatted "years.days"
+  - (Previous Year, 2017/2018/...) WARP: WAR statistic (based on Baseball Prospectus) for previous season of individual player
+  - Career WARP: Career WAR statistic (based on Baseball Prospectus) for individual player
+  - (Previous Year, 2017/2018/...) Salary: Previous salary for player
+  - Club Offer: Proposed salary of team, formatted "$x,xxx,xxx"
+  - Player Request: Proposed salary of player, formatted "$x,xxx,xxx"
+  - (Current Year, 2018/2019/...) Salary: Final salary for player, formatted "$x,xxx,xxx" unless extension was agreed to (NA if player is non-tendered/released)
