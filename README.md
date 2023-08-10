@@ -12,7 +12,7 @@ This project is an attempt to predict MLB arbitration salaries based on a bevy o
 
 | Component | Description |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Data](https://github.com/joshsalce/arbitration_tensorflow/tree/main/Data)| CSV files of raw data to be cleaned. Includes custom Fangraphs data, scraped and collected arbitration data with further data collection | 
+| [Data](https://github.com/joshsalce/arbitration_tensorflow/tree/main/Data)| CSV files of raw data to be cleaned. Includes custom Fangraphs data, scraped and collected arbitration data with further data collection. Includes 'Metadata' folder describing datasets | 
 | [Predictions](https://github.com/joshsalce/arbitration_tensorflow/tree/main/Predictions) | Contains Excel file with test set true and predicted salaires in tables, pivot tables |
 | [Train Test Data](https://github.com/joshsalce/arbitration_tensorflow/tree/main/Train%20Test%20Data) | Contains CSV files of data after cleaning process and splitting into training, test sets |
 | [Visualizations](https://github.com/joshsalce/arbitration_tensorflow/tree/main/Visualizations) | Includes visualizations of histograms visualizing distributions of individual features, scatterplots for model predictions according to different groupings |
